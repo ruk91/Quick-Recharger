@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     width: moderateScale(300, 0.75),
     height: moderateScale(35, 0.5),
     backgroundColor: '#ef6c00',
-    //borderRadius: 25,
+    borderRadius: 10,
     borderStyle: 'solid',
     color: '#fff',
     alignItems: 'center',
