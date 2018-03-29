@@ -9,6 +9,8 @@ import {
   Keyboard
 } from 'react-native';
 import Main from './src/pages/Main';
+import test from './src/pages/test';
+
 import { StackNavigator, DrawerNavigator, NavigationActions,Icon } from 'react-navigation';
 // import MAIcon from 'react-native-vector-icons/MaterialIcons'
 // import SplashScreen from 'react-native-splash-screen';
@@ -33,7 +35,9 @@ export default class App extends Component<{}> {
     render() {
       Text.defaultProps.allowFontScaling=false
       const MainNavigator = StackNavigator({
+        test: { screen: test },
         Main: { screen: Main },
+       
       
       })
       return <MainNavigator />       
